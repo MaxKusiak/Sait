@@ -7,13 +7,18 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body onclick="bodyburger()">
     <div class="capital_block1">
         <div class="top">
             <div class="pustoy">
 
             </div>
-            <a href="../1/index.html" class="home link">Головна</a><a href="#" class="link1 link">Учні</a><a href="#" class="link2 link">Вчителі</a>
+            <div class="burger" onclick="burger(event)">
+                <span class="line2"></span>
+                <span class="line2 seredina"></span>
+                <span class="line2"></span>
+            </div>
+            <div class="menu"><a href="../1/index.html" class="home link">Головна</a><a href="#" class="link1 link">Учні</a><a href="#" class="link2 link">Вчителі</a></div>
         </div>
         <div class="capital_text">
             <strong>Сайт учнів 8-А</strong>
@@ -51,5 +56,6 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

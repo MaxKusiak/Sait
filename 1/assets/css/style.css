@@ -20,10 +20,28 @@ body{
     /* padding: 0 25px; */
     cursor: auto;
     position: fixed;
+    z-index: 2;
 }
 .top a{
     color: white;
     text-decoration: none;
+}
+.burger{
+    display: none;
+    text-align: left;
+    /* height: 13px; */
+}
+.line2{
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    display: inline-block;
+}
+.seredina{
+    margin: 5px 0;
+}
+.menu{
+    display: inline-block;
 }
 .link{
     display: inline-block;
@@ -52,12 +70,17 @@ body{
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 50px black;
+    position: relative;
+    width: 100%;
 }
 .capital_text{
     color: white;
     font-size: 100px;
     -webkit-text-stroke: 1px black;
-    margin-top: 300px;
+    /* margin-top: 300px; */
+    position: absolute;
+    top: 300px;
+    z-index: 1;
 }
 .title_osnova{
     text-align: center;
@@ -68,7 +91,7 @@ body{
 .text_osnova{
     cursor: auto;
     text-align: justify;
-    width: 1000px;
+    width: 50%;
     margin: 0 auto;
     font-size: 30px;
     margin-bottom: 50px;
@@ -96,4 +119,133 @@ body{
     width: 1px;
     background-color: white;
     margin: 0 15px;
+}
+@media (max-width: 1001px){
+    .capital_block1{
+        height: 500px;
+    }
+    .capital_text{
+        top: 200px;
+    }
+    .text_osnova{
+        font-size: 20px;
+    }
+}
+@media (max-width: 850px){
+    .capital_text{
+        font-size: 70px;
+    }
+    .title_osnova{
+        font-size: 50px;
+    }
+    .link{
+        font-size: 25px;
+    }
+}
+@media (max-width: 717px){
+    .footer{
+        font-size: 20px;
+    }
+    .icon{
+        font-size: 25px;
+    }
+}
+@media (max-width: 650px){
+    .text_osnova{
+        font-size: 15px;
+    }
+    .title_osnova{
+        margin: 50px 0;
+    }
+}
+@media (max-width: 581px){
+    .capital_text{
+        font-size: 60px;
+        top: 170px;
+    }
+    .title_osnova{
+        font-size: 40px;
+    }
+    .footer{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+    .capital_block1{
+        height: 400px;
+    }
+}
+@media (max-width: 471px){
+    .capital_text{
+        font-size: 50px;
+    }
+    .title_osnova{
+        font-size: 30px;
+    }
+    .footer{
+        font-size: 15px;
+    }
+    .icon{
+        font-size: 17px;
+    }
+    .menu{
+        display: none;
+        background-color: darkred;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+    }
+    .link{
+        display: block;
+    }
+    /* .link{
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: 50px;
+        background-color: darkred;
+    }
+    .home{
+        top: 45px;
+    }
+    .link1{
+        top: 98px;
+        padding-right: 63px;
+    }
+    .link2{
+        top: 151px;
+        padding-right: 21px;
+    } */
+    .burger{
+        display: flex;
+        flex-direction: column;
+    }
+    .top{
+        display: flex;
+        align-items: center;
+        padding: 15px 0 15px 35px;
+    }
+}
+@media (max-width: 445px){
+    .capital_block1{
+        height: 350px;
+    }
+    .capital_text{
+        font-size: 40px;
+        top: 150px;
+    }
+    .title_osnova{
+        font-size: 27px;
+        margin: 30px 0;
+    }
+    .text_osnova{
+        font-size: 13px;
+    }
+    .footer{
+        font-size: 13px;
+    }
+    .icon{
+        font-size: 15px;
+    }
 }
