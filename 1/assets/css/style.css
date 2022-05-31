@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 body{
     font-family: 'FontAwesome';
@@ -15,7 +16,7 @@ body{
     width: 100%;
     /* padding: 0 25px; */
     cursor: auto;
-    user-select: none;
+    position: fixed;
 }
 .top a{
     color: white;
@@ -47,11 +48,25 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    user-select: none;
+    box-shadow: 0 0 50px black;
 }
 .capital_text{
     color: white;
     font-size: 100px;
     -webkit-text-stroke: 1px black;
     margin-top: 300px;
+}
+.title_osnova{
+    text-align: center;
+    font-size: 70px;
+    width: 100%;
+    margin: 100px 0;    
+}
+.text_osnova{
+    cursor: auto;
+    text-align: justify;
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
